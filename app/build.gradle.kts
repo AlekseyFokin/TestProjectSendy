@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "org.sniffsnirr.testprojectsendy"
-    compileSdk = 28
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "org.sniffsnirr.testprojectsendy"
