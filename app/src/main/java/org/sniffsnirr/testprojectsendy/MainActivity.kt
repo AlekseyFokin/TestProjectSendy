@@ -17,8 +17,8 @@ import org.sniffsnirr.testprojectsendy.ui.theme.TestProjectSendyTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        installSplashScreen()
-        setContent {
+        enableEdgeToEdge()
+                setContent {
             TestProjectSendyTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(

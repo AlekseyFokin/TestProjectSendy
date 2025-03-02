@@ -6,11 +6,11 @@ plugins {
 
 android {
     namespace = "org.sniffsnirr.testprojectsendy"
-    compileSdk = 35
+    compileSdk = 28
 
     defaultConfig {
         applicationId = "org.sniffsnirr.testprojectsendy"
-        minSdk = 31
+        minSdk = 28
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -57,5 +57,4 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation(libs.androidx.splashscreen)
-}
+ }
