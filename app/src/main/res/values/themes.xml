@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TestProjectSendy" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.SplashScreenSendy" parent="Theme.SplashScreen" >
+        <item name="android:windowSplashScreenBackground">@color/red</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_animated_vector</item>
+        <item name="android:windowSplashScreenAnimationDuration">5000</item>
+        <item name="postSplashScreenTheme">@style/Theme.TestProjectSendy</item>
+    </style>
+</resources>
