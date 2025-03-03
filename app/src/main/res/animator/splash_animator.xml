@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<objectAnimator android:duration="5000"
+<objectAnimator android:duration="3000"
     android:interpolator="@android:anim/linear_interpolator"
     android:propertyName="rotation"
     android:repeatCount="infinite"
