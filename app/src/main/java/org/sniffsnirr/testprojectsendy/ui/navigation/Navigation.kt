@@ -10,3 +10,6 @@ object Login
 
 @Serializable
 object SMS
+
+@Serializable
+object Final

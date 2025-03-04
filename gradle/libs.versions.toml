@@ -6,12 +6,11 @@ junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
-activityCompose = "1.10.1"
 
 navigationComposeVers="2.8.8"
-composeAnimationVers="1.7.8"
 serializationPluginVers="2.1.10"
 serializationLibVers= "1.8.0"
+lottieComposeLibVers="6.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version = "1.13.1" }
@@ -32,6 +31,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 androidx-navigation-compose={group="androidx.navigation", name="navigation-compose",version.ref="navigationComposeVers"}
 androidx-compose-animation={group="androidx.compose.animation", name="animation-graphics", version = "1.3.3" }
 kotlinx-serialization={group="org.jetbrains.kotlinx", name="kotlinx-serialization-json",version.ref="serializationLibVers"}
+lottie-compose={group="com.airbnb.android", name="lottie-compose", version.ref="lottieComposeLibVers"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -15,9 +15,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import org.sniffsnirr.testprojectsendy.ui.navigation.Final
 import org.sniffsnirr.testprojectsendy.ui.navigation.Login
+import org.sniffsnirr.testprojectsendy.ui.navigation.SMS
 import org.sniffsnirr.testprojectsendy.ui.navigation.Splash
+import org.sniffsnirr.testprojectsendy.ui.screen.FinalScreen
 import org.sniffsnirr.testprojectsendy.ui.screen.LoginScreen
+import org.sniffsnirr.testprojectsendy.ui.screen.SMSScreen
 import org.sniffsnirr.testprojectsendy.ui.screen.SplashScreen
 import org.sniffsnirr.testprojectsendy.ui.theme.TestProjectSendyTheme
 
@@ -40,7 +44,15 @@ class MainActivity : ComponentActivity() {
                         }
                     }
                     composable<Login> {
-                        LoginScreen {}
+                        LoginScreen {navController.navigate(SMS)}
+                    }
+
+                    composable<SMS> {
+                        SMSScreen { navController.navigate(Final)}
+                    }
+
+                    composable<Final> {
+                        FinalScreen()
                     }
                 }
             }

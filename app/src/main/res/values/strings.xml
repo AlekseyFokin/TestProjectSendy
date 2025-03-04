@@ -1,5 +1,29 @@
 <resources>
     <string name="app_name">TestProjectSendy</string>
     <string name="splash_screen_image_description">заставка</string>
-    <string name="validated_text_field_fone_number_label">Номер мобильного телефона</string>
+
+    <string name="login_screen_validated_text_field_fone_number_placeholder">+7XXXXXXXXXX</string>
+    <string name="login_screen_validated_text_field_fone_number_label">номер телефона</string>
+
+    <string name="login_screen_label">Для входа в приложение введите номер телефона</string>
+    <string name="login_screen_button_label">Продолжить</string>
+
+    <string name="login_screen_text_field_error_is_empty">номер телефона не должен быть пустым</string>
+    <string name="login_screen_text_field_error_no_fone_number">номер телефона должен быть в формате +7XXXXXXXXXX</string>
+    <string name="login_screen_text_field_error_overhead_number">превышено количество символов</string>
+
+    <string name="sms_screen_validated_text_field_code_placeholder">XXXXXX</string>
+    <string name="sms_screen_validated_text_field_code_label">код из SMS</string>
+
+    <string name="sms_screen_label">Введите код из СМС для продолжения</string>
+    <string name="sms_screen_button_label">Продолжить</string>
+
+    <string name="sms_screen_text_field_error_no_code">код из состоит из 6 цифр</string>
+    <string name="sms_screen_text_field_error_code_empty">для продолжения код из СМС должен быть введен</string>
+    <string name="sms_screen_text_field_error_overhead_number">превышено количество символов</string>
+
+    <string name="final_screen_label">Вы успешно авторизовались</string>
+
+
+
 </resources>

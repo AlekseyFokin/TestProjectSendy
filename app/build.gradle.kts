@@ -62,5 +62,6 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.compose.animation)
     implementation(libs.kotlinx.serialization)
+    implementation(libs.lottie.compose)
 
  }
