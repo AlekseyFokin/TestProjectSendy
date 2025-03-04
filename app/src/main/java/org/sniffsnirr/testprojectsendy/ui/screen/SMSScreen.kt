@@ -1,6 +1,5 @@
 package org.sniffsnirr.testprojectsendy.ui.screen
 
-import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -30,7 +29,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.sniffsnirr.testprojectsendy.R
 import org.sniffsnirr.testprojectsendy.ui.composefun.CodeValidatedTextField
-import org.sniffsnirr.testprojectsendy.ui.composefun.FoneValidatedTextField
 
 @Composable
 fun SMSScreen(onValidationClick:()->Unit){
@@ -39,8 +37,7 @@ fun SMSScreen(onValidationClick:()->Unit){
     val code = remember { mutableStateOf("") }
     val isLoading = remember { mutableStateOf(false) }
 
-    val context = LocalContext.current
-    val clickStartRequestButton: () -> Unit = {}// vm.setRequestObject() }
+     val clickStartRequestButton: () -> Unit = {}// vm.setRequestObject() }
 
     Column(
         modifier = Modifier

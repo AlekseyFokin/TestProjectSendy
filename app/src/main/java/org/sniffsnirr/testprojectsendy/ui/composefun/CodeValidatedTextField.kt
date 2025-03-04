@@ -12,7 +12,6 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme.colorScheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
@@ -25,7 +24,6 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.sniffsnirr.testprojectsendy.R
-import org.sniffsnirr.testprojectsendy.ui.composefun.validationstate.ValidationFoneNumber
 import org.sniffsnirr.testprojectsendy.ui.composefun.validationstate.ValidationSMSCode
 import org.sniffsnirr.testprojectsendy.ui.composefun.validationstate.ValidationSMSCode.IsEmpty.REGEX_CODE_PATTERN
 
