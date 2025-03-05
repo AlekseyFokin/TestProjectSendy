@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(files("/home/sniffsnirr/Work/Android/TestProjectSendy/TestProjectSendy/app/lib/sendy_app_sdk.aar"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -63,5 +64,11 @@ dependencies {
     implementation(libs.androidx.compose.animation)
     implementation(libs.kotlinx.serialization)
     implementation(libs.lottie.compose)
+
+    implementation(libs.constraint.layout)
+    implementation(libs.gson)
+    implementation(libs.com.neovisionaries.websocket.client)
+
+
 
  }

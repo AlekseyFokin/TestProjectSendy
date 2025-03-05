@@ -31,7 +31,8 @@ import org.sniffsnirr.testprojectsendy.ui.composefun.validationstate.ValidationF
 @Composable
 fun FoneValidatedTextField(
     foneNumber: MutableState<String>,
-    isError: MutableState<Boolean>
+    isError: MutableState<Boolean>,
+    isLoading: MutableState<Boolean>,
 ) {
     val errorMessage: MutableState<ValidationFoneNumber> =
         remember { mutableStateOf(ValidationFoneNumber.IsEmpty) }
@@ -88,6 +89,7 @@ fun FoneValidatedTextField(
         modifier = Modifier
             .padding(PaddingValues(start = 16.dp, end = 16.dp))
             .width(250.dp),
+        enabled = !isLoading.value,
     )
 }
 

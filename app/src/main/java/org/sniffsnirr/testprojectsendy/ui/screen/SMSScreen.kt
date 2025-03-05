@@ -82,7 +82,7 @@ fun SMSScreen(onValidationClick:()->Unit){
 
                 Spacer(modifier = Modifier.height(18.dp))
 
-                CodeValidatedTextField(code, isError)
+                CodeValidatedTextField(code, isError,isLoading)
 
                 Spacer(modifier = Modifier.height(18.dp))
 

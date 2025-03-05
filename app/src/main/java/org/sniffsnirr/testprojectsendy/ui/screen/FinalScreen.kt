@@ -1,5 +1,6 @@
 package org.sniffsnirr.testprojectsendy.ui.screen
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -22,6 +23,7 @@ import com.airbnb.lottie.compose.rememberLottieComposition
 import org.sniffsnirr.testprojectsendy.R
 
 
+@SuppressLint("SuspiciousIndentation")
 @Composable
 
 fun FinalScreen() {

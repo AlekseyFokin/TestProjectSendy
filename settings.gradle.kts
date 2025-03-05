@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "TestProjectSendy"
 include(":app")
+
  

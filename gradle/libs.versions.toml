@@ -10,6 +10,8 @@ navigationComposeVers="2.8.8"
 serializationPluginVers="2.1.10"
 serializationLibVers= "1.8.0"
 lottieComposeLibVers="6.0.1"
+constraintlayoutVers="2.2.0"
+msClientVers="2.14"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version = "1.13.1" }
@@ -31,6 +33,10 @@ androidx-navigation-compose={group="androidx.navigation", name="navigation-compo
 androidx-compose-animation={group="androidx.compose.animation", name="animation-graphics", version = "1.7.8" }
 kotlinx-serialization={group="org.jetbrains.kotlinx", name="kotlinx-serialization-json",version.ref="serializationLibVers"}
 lottie-compose={group="com.airbnb.android", name="lottie-compose", version = "6.6.3" }
+
+constraint-layout={group="androidx.constraintlayout", name="constraintlayout", version.ref="constraintlayoutVers"}
+gson = "com.google.code.gson:gson:2.12.1"
+com-neovisionaries-websocket-client={group="com.neovisionaries", name="nv-websocket-client", version.ref="msClientVers"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

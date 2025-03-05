@@ -31,7 +31,8 @@ import org.sniffsnirr.testprojectsendy.ui.composefun.validationstate.ValidationS
 @Composable
 fun CodeValidatedTextField(
     code: MutableState<String>,
-    isError: MutableState<Boolean>
+    isError: MutableState<Boolean>,
+    isLoading: MutableState<Boolean>
 ) {
     val errorMessage: MutableState<ValidationSMSCode> =
         remember { mutableStateOf(ValidationSMSCode.IsEmpty) }
@@ -88,6 +89,7 @@ fun CodeValidatedTextField(
         modifier = Modifier
             .padding(PaddingValues(start = 16.dp, end = 16.dp))
             .width(250.dp),
+        enabled = !isLoading.value
     )
 }
 

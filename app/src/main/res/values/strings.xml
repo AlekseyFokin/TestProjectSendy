@@ -24,6 +24,8 @@
 
     <string name="final_screen_label">Вы успешно авторизовались</string>
 
-
+    <string name="alert_dialog_title_connection_error">Ошибка соединения</string>
+    <string name="button_ok_label">OK</string>
+    <string name="alert_dialog_title_response_error">Ошибка получения данных</string>
 
 </resources>
