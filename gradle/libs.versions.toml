@@ -9,7 +9,7 @@ lifecycleRuntimeKtx = "2.8.7"
 navigationComposeVers="2.8.8"
 serializationPluginVers="2.1.10"
 serializationLibVers= "1.8.0"
-lottieComposeLibVers="6.0.1"
+lottieComposeLibVers="6.6.3"
 constraintlayoutVers="2.2.0"
 msClientVers="2.14"
 splashscreenVers="1.0.1"
@@ -33,7 +33,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 androidx-navigation-compose={group="androidx.navigation", name="navigation-compose",version.ref="navigationComposeVers"}
 androidx-compose-animation={group="androidx.compose.animation", name="animation-graphics", version = "1.7.8" }
 kotlinx-serialization={group="org.jetbrains.kotlinx", name="kotlinx-serialization-json",version.ref="serializationLibVers"}
-lottie-compose={group="com.airbnb.android", name="lottie-compose", version = "6.6.3" }
+lottie-compose={group="com.airbnb.android", name="lottie-compose", version = "lottieComposeLibVers" }
 androidx-core-splashscreen={group="androidx.core", name="core-splashscreen", version.ref="splashscreenVers"}
 
 constraint-layout={group="androidx.constraintlayout", name="constraintlayout", version.ref="constraintlayoutVers"}
