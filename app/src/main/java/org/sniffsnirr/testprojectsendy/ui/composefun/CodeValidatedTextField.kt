@@ -14,6 +14,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -25,14 +26,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.sniffsnirr.testprojectsendy.R
 import org.sniffsnirr.testprojectsendy.ui.composefun.validationstate.ValidationSMSCode
-import org.sniffsnirr.testprojectsendy.ui.composefun.validationstate.ValidationSMSCode.IsEmpty.REGEX_CODE_PATTERN
-
+import org.sniffsnirr.testprojectsendy.ui.composefun.validationstate.ValidationSMSCode.Companion.REGEX_CODE_PATTERN
 
 @Composable
 fun CodeValidatedTextField(
     code: MutableState<String>,
     isError: MutableState<Boolean>,
-    isLoading: MutableState<Boolean>
+    isLoading: State<Boolean>
 ) {
     val errorMessage: MutableState<ValidationSMSCode> =
         remember { mutableStateOf(ValidationSMSCode.IsEmpty) }
@@ -40,7 +40,7 @@ fun CodeValidatedTextField(
     OutlinedTextField(
         value = code.value,
         textStyle = TextStyle(fontSize=25.sp),
-        colors = TextFieldColors(),
+        colors = textFieldColors(),
         placeholder = {Text(text=stringResource(R.string.sms_screen_validated_text_field_code_placeholder))},
         onValueChange = {
             when {

@@ -14,6 +14,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -32,7 +33,7 @@ import org.sniffsnirr.testprojectsendy.ui.composefun.validationstate.ValidationF
 fun FoneValidatedTextField(
     foneNumber: MutableState<String>,
     isError: MutableState<Boolean>,
-    isLoading: MutableState<Boolean>,
+    isLoading: State<Boolean>,
 ) {
     val errorMessage: MutableState<ValidationFoneNumber> =
         remember { mutableStateOf(ValidationFoneNumber.IsEmpty) }
@@ -40,7 +41,7 @@ fun FoneValidatedTextField(
     OutlinedTextField(
         value = foneNumber.value,
         textStyle = TextStyle(fontSize=25.sp),
-        colors = TextFieldColors(),
+        colors = textFieldColors(),
         placeholder = {Text(text=stringResource(R.string.login_screen_validated_text_field_fone_number_placeholder))},
         onValueChange = {
             when {

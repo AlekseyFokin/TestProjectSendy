@@ -11,11 +11,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TestProjectSendy">
+        android:theme="@style/MySplashScreenStyle"
+        android:enableOnBackInvokedCallback="true">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.TestProjectSendy">
+            android:theme="@style/MySplashScreenStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
